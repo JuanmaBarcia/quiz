@@ -15,7 +15,7 @@ document.getElementById("quiz").addEventListener("submit", function(event) {
 
     event.preventDefault();
 
-    // -- -- -- -- -- -- -- -- -- -- -- -- -- - Validacion 5001-- -- -- -- -- -- -- -- -- -- -- -- -- - //
+    // --------------------------- Validacion 5001 --------------------------- //
 
     let cincoMilUno = event.target.elements["q5001"].value;
 
@@ -57,7 +57,7 @@ document.getElementById("quiz").addEventListener("submit", function(event) {
         document.querySelector("label[for='5001c']").className = "red"
     }
 
-    // -- -- -- -- -- -- -- -- -- -- -- -- -- - Validacion 5002-- -- -- -- -- -- -- -- -- -- -- -- -- - //
+    // --------------------------- Validacion 5002 --------------------------- //
 
     let cincoMilDosA = event.target.elements["q5002a"].checked;
     let cincoMilDosB = event.target.elements["q5002b"].checked;
@@ -116,7 +116,7 @@ document.getElementById("quiz").addEventListener("submit", function(event) {
         }
     }
 
-    // -- -- -- -- -- -- -- -- -- -- -- -- -- - Validacion 5003-- -- -- -- -- -- -- -- -- -- -- -- -- - //
+    // --------------------------- Validacion 5003 --------------------------- //
 
     let cincoMilTres = event.target.elements["q5003"].value;
 
@@ -144,7 +144,7 @@ document.getElementById("quiz").addEventListener("submit", function(event) {
         document.getElementById('5003a').className = "red"
     }
 
-    // -- -- -- -- -- -- -- -- -- -- -- -- -- - Validacion 5004-- -- -- -- -- -- -- -- -- -- -- -- -- - //
+    // --------------------------- Validacion 5004 --------------------------- //
 
     let cincoMilCuatroA = event.target.elements["q5004a"].checked;
     let cincoMilCuatroB = event.target.elements["q5004b"].checked;
@@ -203,7 +203,7 @@ document.getElementById("quiz").addEventListener("submit", function(event) {
         }
     }
 
-    // -- -- -- -- -- -- -- -- -- -- -- -- -- - Validacion 5005-- -- -- -- -- -- -- -- -- -- -- -- -- - //
+    // --------------------------- Validacion 5005 --------------------------- //
 
     let cincoMilCinco = event.target.elements["q5005"].value;
 
@@ -245,7 +245,7 @@ document.getElementById("quiz").addEventListener("submit", function(event) {
         document.querySelector("label[for='q5005c']").className = "red"
     }
 
-    // -- -- -- -- -- -- -- -- -- -- -- -- -- - Validacion 5006-- -- -- -- -- -- -- -- -- -- -- -- -- - //
+    // --------------------------- Validacion 5006 --------------------------- //
 
     let arrSelected = [];
     for (let option of document.getElementById('q5006').options) {
@@ -289,4 +289,94 @@ document.getElementById("quiz").addEventListener("submit", function(event) {
             document.querySelector(`option[value='${arrSelected[i]}']`).className = "red_border"
         }
     }
+
+
+    // --------------------------- VALIDACIONES VIEJAS --------------------------- //
+    // --------------------------- Validacion 5001 --------------------------- //
+
+    // let cincoMilUno = event.target.elements["q5001"].value;
+
+    // if (!cincoMilUno) {
+    //     alert("Por favor marque una opción")
+    // } else if (cincoMilUno == "pn") {
+    //     alert("correcto")
+    // } else {
+    //     alert("incorrecto")
+    // }
+
+    // --------------------------- Validacion 5002 --------------------------- //
+
+    // let cincoMilDosA = event.target.elements["q5002a"].checked;
+    // let cincoMilDosB = event.target.elements["q5002b"].checked;
+    // let cincoMilDosC = event.target.elements["q5002c"].checked;
+
+    // if (!cincoMilDosA && !cincoMilDosB && !cincoMilDosC) {
+    //     alert("Por favor marque una opción")
+    // } else if (cincoMilDosA) {
+    //     alert("correcto")
+    // } else {
+    //     alert("incorrecto")
+    // }
+
+    // --------------------------- Validacion 5003 --------------------------- //
+
+    // let cincoMilTres = event.target.elements["q5003"].value;
+
+    // if (!cincoMilTres) {
+    //     alert("Por favor marque una opción")
+    // } else if (cincoMilTres == 14) {
+    //     alert("Es correcto")
+    // } else {
+    //     alert("incorrecto")
+    // }
+
+    // --------------------------- Validacion 5004 --------------------------- //
+
+    // let cincoMilCuatroA = event.target.elements["q5004a"].checked;
+    // let cincoMilCuatroB = event.target.elements["q5004b"].checked;
+    // let cincoMilCuatroC = event.target.elements["q5004c"].checked;
+
+    // if (!cincoMilCuatroA && !cincoMilCuatroB && !cincoMilCuatroC) {
+    //     alert("Por favor marque una opción")
+    // } else if (cincoMilCuatroB && !cincoMilCuatroA && !cincoMilCuatroC) {
+    //     alert("correcto")
+    // } else {
+    //     alert("incorrecto")
+    // }
+
+    // --------------------------- Validacion 5005 --------------------------- //
+
+    // let cincoMilCinco = event.target.elements["q5005"].value;
+
+    // if (!cincoMilCinco) {
+    //     alert("Por favor marque una opción")
+    // } else if (cincoMilCinco == "16Sem") {
+    //     alert("correcto")
+    //     contador++
+    //     console.log(contador);
+    // } else {
+    //     alert("incorrecto")
+    // }
+
+    // --------------------------- Validacion 5006 --------------------------- //
+
+    // let corrects = ["v5006a", "v5006b"].toString();
+
+    // let arrSelected = [];
+    // for (let option of document.getElementById('q5006').options) {
+    //     if (option.selected) {
+    //         arrSelected.push(option.value);
+    //     }
+    // }
+
+    // let stringArr = arrSelected.toString()
+
+    // if (arrSelected.length == 0) {
+    //     console.log("Vacio")
+    // } else if (corrects == stringArr) {
+    //     console.log("correcto")
+    // } else {
+    //     console.log("incorrecto")
+    // }
+    // console.log(resp);
 })
