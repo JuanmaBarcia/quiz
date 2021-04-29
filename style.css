@@ -1,5 +1,13 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --green: #00b800;
+    --red: #ae0f0f;
+    --blue: #3a65d3;
+}
+
 body {
-    background-color: #000;
+    background-color: var(--black);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1rem;
 }
@@ -65,25 +73,29 @@ option {
     font-size: 1.5rem;
     border-radius: 1rem;
     border: none;
-    background-color: #3a65d3;
-    color: #fff;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .red {
-    border: 2px solid red;
+    border: 2px solid var(--red);
 }
 
 .green {
-    border: 2px solid rgb(0, 184, 0);
+    border: 2px solid var(--green);
 }
 
 .default {
-    border: 1px solid #000;
+    border: 1px solid var(--black);
 }
 
 .campo_vacio {
-    color: red;
+    color: var(--white);
     font-weight: bolder;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: var(--red);
 }
 
 @media screen and (min-width:768px) {
